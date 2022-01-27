@@ -1,4 +1,4 @@
-import { getAppNames, registerApplication, start } from "single-spa";
+import {  registerApplication, start } from "single-spa";
 import {
   constructApplications,
   constructRoutes,
