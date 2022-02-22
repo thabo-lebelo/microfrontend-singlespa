@@ -49,18 +49,16 @@
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
-  <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
         "@thabo/home": "http://localhost:9001/thabo-home.js",
         "@thabo/details": "http://localhost:9003/thabo-details.js",
         "@thabo/navigation": "http://localhost:9002/thabo-navigation.js",
-        "@thabo/root-config": "//localhost:9000/thabo-root-config.js"
+        "@thabo/root-config": "http://localhost:9000/thabo-root-config.js"
       }
     }
   </script>
-  <% } %>
 
   <script type="systemjs-importmap">
     {
@@ -78,13 +76,8 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
-  <% if (isLocal) { %>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
-  <% } else { %>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
-  <% } %>
 
 </head>
 <body>
