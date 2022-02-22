@@ -1,3 +1,15 @@
-p {
-    color: red;
+.wrapper {
+    height:98vh;
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    background-color: pink;
+}
+
+.menu-container {
+    height: 100%;
+    max-width: 200px;
+    background-color: aqua;
 }

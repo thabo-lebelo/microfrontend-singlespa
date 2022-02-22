@@ -1,12 +1,11 @@
 <single-spa-router>
-  <div>
-    <route default>
-      <application name="@thabo/navigation"></application>
-    </route>
-  </div>
-  <div>
-    <route default>
-      <application name="@thabo/home"></application>
-    </route>
-  </div>
+    <div class="wrapper">
+        <div class="menu-container">
+            <application name="@thabo/navigation"></application>
+        </div>
+        <div class="content">
+            <application name="@thabo/home"></application>
+            <application name="@thabo/details"></application>
+        </div>
+    </div>
 </single-spa-router>
