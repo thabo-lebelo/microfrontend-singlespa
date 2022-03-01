@@ -18,10 +18,10 @@
     Learn more about CSP policies at https://content-security-policy.com/#directive
   -->
   <meta http-equiv="Content-Security-Policy" 
-    content="default-src 'self' https: localhost:*; 
-    script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; 
-    connect-src https: localhost:* ws://localhost:*; 
-    style-src 'unsafe-inline' http://localhost:9000/ https:; 
+    content="default-src *; 
+    script-src 'unsafe-inline' 'unsafe-eval' *; 
+    connect-src *; 
+    style-src 'unsafe-inline' *; 
     object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
   <link rel="stylesheet" href="styles.css">
@@ -52,10 +52,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@thabo/home": "http://localhost:9001/thabo-home.js",
-        "@thabo/details": "http://localhost:9003/thabo-details.js",
-        "@thabo/navigation": "http://localhost:9002/thabo-navigation.js",
-        "@thabo/root-config": "http://localhost:9000/thabo-root-config.js"
+        "@thabo/home": "http://services.thabolebelo.com/thabo-home.js",
+        "@thabo/details": "http://services.thabolebelo.com/thabo-details.js",
+        "@thabo/navigation": "http://services.thabolebelo.com/thabo-navigation.js",
+        "@thabo/root-config": "http://services.thabolebelo.com/thabo-root-config.js"
       }
     }
   </script>
